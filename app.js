@@ -1,3 +1,4 @@
+var hellobot = require('./hellobot')
 var express = require('express');
 var bodyParser = require('body-parser');
 
@@ -9,6 +10,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // test route
 app.get('/', function (req, res) { res.status(200).send('Hello world!') });
+
+//Route that listens for a POST to /hello
+app.post('/hello', hellobot)
 
 // error handler
 app.use(function (err, req, res, next) {
