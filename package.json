@@ -1,0 +1,17 @@
+
+
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "slackbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "icdozen"
+  },
+  "author": "Iran Campos",
+  "license": "ISC"
+}
